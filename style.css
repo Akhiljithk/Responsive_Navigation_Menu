@@ -1,0 +1,143 @@
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --bgColor:#191834;
+  --primary:#9C59CB;
+}
+
+body {
+  background: var(--bgColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  position: absolute;
+  top: 50;
+}
+
+.nav-container {
+  position: relative;
+  top: 50px;
+}
+
+.nav-container .navigation {
+  position: relative;
+  width: 80px;
+  height: 370px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;        
+}
+.nav-container .navigation.active {
+  position: relative;
+  width: 300px;
+  height: 370px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.nav-container .navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-container .navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+}
+
+.nav-container .navigation ul li:hover {
+  background: #efefef;
+}
+
+.nav-container .navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: var(--bgColor);
+  font-weight: 500;
+}
+
+.nav-container .navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 80px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.nav-container .navigation ul li a .icon .fa {
+  font-size: 24px;
+}
+
+.nav-container .navigation ul li a .title {
+  position: relative;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+}
+
+.nav-container .nav-btn {
+  position: absolute;
+  top: calc(50% - 20px);
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  background: #f5f5f5;
+  cursor: pointer;
+  border: 5px solid var(--bgColor);
+  border-radius: 50%;
+}
+
+.nav-container .nav-btn::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f054";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--bgColor);
+}
+.nav-btn.active::before{
+  content: "\f053";
+}
